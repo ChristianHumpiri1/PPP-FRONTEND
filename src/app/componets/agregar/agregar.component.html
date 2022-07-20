@@ -1,0 +1,26 @@
+
+<div class="container">
+  <p>AGREGAR organizacion</p>
+  <div class="row">
+      <div class="col-sm-6">
+          <form>
+              <div class="mb-3">
+                  <label class="form-label">Nombre de organizacion</label>
+                  <input [(ngModel)]="organizacion.nombreo" type="text" class="form-control" name="nombre">
+              </div>
+
+              <div class="mb-3">
+                  <label class="form-label">ruc</label>
+                  <input [(ngModel)]="organizacion.ruc" type="text" class="form-control" name="nombre">
+              </div>
+
+              <button (click)="agregar()" class="btn btn-primary">Agregar</button>
+          </form>
+      </div>
+
+
+
+
+  </div>
+
+</div>

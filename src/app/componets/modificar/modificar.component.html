@@ -1,0 +1,18 @@
+<div class="container">
+  <p>MODOFICAR EQUIPO</p>
+  <div class="row">
+      <div class="col-sm-6">
+          <form>
+              <div class="mb-3">
+                  <label class="form-label">Nombre de organizacion</label>
+                  <input [(ngModel)]="organizacion.nombreo" type="text" class="form-control" name="nombre">
+              </div>
+
+              <div class="mb-3">
+                  <label class="form-label">logo</label>
+                  <input [(ngModel)]="organizacion.ruc" type="text" class="form-control" name="logo">
+              </div>
+
+              <button (click)="modificar()" class="btn btn-primary">Guardar</button>
+          </form>
+      </div>

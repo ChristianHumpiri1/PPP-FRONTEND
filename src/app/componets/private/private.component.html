@@ -1,0 +1,21 @@
+<app-buscar></app-buscar>
+
+<h1>Documentos Subidos del Practicante</h1>
+<div class="container-fluid mt-5" >
+  <div class="row">
+      <div>
+          <input type="file" class="upload" (change)="cargarpdf($event)">
+          <span class="spacer"></span>
+
+          <br><br>
+      </div>
+
+<tbody>
+  <tr *ngFor="let pdf of pdf; let i = index">
+      <th scope="row">{{ i + 1}}</th>
+      <td><a href="{{ pdf }}" target="_blank">
+        <mat-icon id="file">receipt</mat-icon>
+          </a></td>
+  </tr>
+
+</tbody>
